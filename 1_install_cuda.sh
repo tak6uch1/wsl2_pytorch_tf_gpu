@@ -18,6 +18,7 @@ echo 'export PATH=/usr/local/cuda-11.5/bin:${PATH}' >> ${HOME}/.bashrc
 echo 'export CUDA_VISIBLE_DEVICES=0' >> ${HOME}/.bashrc
 source ${HOME}/.bashrc
 
+sudo ln -s /usr/local/cuda-11.5/lib64/libcusolver.so.11 /usr/local/cuda-11.5/lib64/libcusolver.so.10
 cat /usr/local/cuda-11.5/version.json
 
 # Install third party tool (optional)
